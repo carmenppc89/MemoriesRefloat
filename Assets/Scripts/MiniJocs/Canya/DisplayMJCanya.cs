@@ -27,10 +27,6 @@ public class DisplayMJCanya : MonoBehaviour
         m_canvas.renderMode = RenderMode.ScreenSpaceCamera;
         m_canvas.worldCamera = FindAnyObjectByType(typeof(Camera)) as Camera;
 
-        // Recoger los limites
-        m_limitL = -1 * (((m_limite.rect.width / 2) - (m_bar.rect.width / 2)));
-        m_limitR = (m_limite.rect.width / 2) - (m_bar.rect.width / 2);
-
 
     }
     private void OnDisable()
