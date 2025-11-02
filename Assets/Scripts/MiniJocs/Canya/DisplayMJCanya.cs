@@ -12,14 +12,14 @@ public class DisplayMJCanya : MonoBehaviour
     [SerializeField] private Canvas m_canvas;
     [SerializeField] private RectTransform m_limite;
     [SerializeField] private RectTransform m_bar;
-    [SerializeField] private GameObject m_peix;
+    [SerializeField] private RectTransform m_peix;
     [SerializeField] private GameObject m_marc;
     [SerializeField] private GameObject m_progress;
     [SerializeField] private GameObject m_progVar;
     [SerializeField] private GameObject m_progMarc;
 
-    private Vector3 m_limitL;
-    private Vector3 m_limitR;
+    private float m_limitL;
+    private float m_limitR;
 
     private void OnEnable()
     {
@@ -28,16 +28,19 @@ public class DisplayMJCanya : MonoBehaviour
         m_canvas.worldCamera = FindAnyObjectByType(typeof(Camera)) as Camera;
 
         // Recoger los limites
-        m_limitL = new Vector3(-1*(((m_limite.rect.width / 2) - (m_bar.rect.width / 2))), 0, 0);
-        m_limitR = new Vector3(((m_limite.rect.width / 2) - (m_bar.rect.width / 2)), 0, 0);
-
+        m_limitL = -1 * (((m_limite.rect.width / 2) - (m_bar.rect.width / 2)));
+        m_limitR = (m_limite.rect.width / 2) - (m_bar.rect.width / 2);
 
 
     }
-
-    void Update()
+    private void OnDisable()
     {
+        // todo Resetear posiciones
+    }
 
+    void FixedUpdate()
+    {
+        m_bar.GetComponent<Rigidbody2D>().velocity = Vector3.left * Time.deltaTime * SO_Canya.PeixSpeed;
     }
 
 }
