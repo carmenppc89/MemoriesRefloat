@@ -496,8 +496,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SO_Canya: {fileID: 11400000, guid: 922bd92c6f77b464190a193299509770, type: 2}
   m_canvas: {fileID: 301478754}
-  m_limite: {fileID: 539912000}
-  m_bar: {fileID: 906561630}
+  m_limite: {fileID: 539912001}
+  m_bar: {fileID: 906561631}
   m_peix: {fileID: 421938187}
   m_marc: {fileID: 227347318}
   m_progress: {fileID: 946083171}

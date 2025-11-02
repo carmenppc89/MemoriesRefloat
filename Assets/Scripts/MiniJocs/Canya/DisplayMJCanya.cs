@@ -28,13 +28,11 @@ public class DisplayMJCanya : MonoBehaviour
         m_canvas.worldCamera = FindAnyObjectByType(typeof(Camera)) as Camera;
 
         // Recoger los limites
-        //m_limitL = new Transform(((m_limite.rect.width / 2) - (m_bar.rect.width / 2)), 0, 0);
         m_limitL = new Vector3(-1*(((m_limite.rect.width / 2) - (m_bar.rect.width / 2))), 0, 0);
         m_limitR = new Vector3(((m_limite.rect.width / 2) - (m_bar.rect.width / 2)), 0, 0);
 
 
-        //m_limite.sizeDelta.x;
-        //m_limite.rect.width;
+
     }
 
     void Update()
