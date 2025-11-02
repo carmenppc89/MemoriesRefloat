@@ -13,6 +13,7 @@ public class DisplayMJCanya : MonoBehaviour
     [SerializeField] private RectTransform m_limite;
     [SerializeField] private RectTransform m_bar;
     [SerializeField] private RectTransform m_peix;
+
     [SerializeField] private GameObject m_marc;
     [SerializeField] private GameObject m_progress;
     [SerializeField] private GameObject m_progVar;
@@ -27,16 +28,16 @@ public class DisplayMJCanya : MonoBehaviour
         m_canvas.renderMode = RenderMode.ScreenSpaceCamera;
         m_canvas.worldCamera = FindAnyObjectByType(typeof(Camera)) as Camera;
 
-
+        //m_peix.GetComponent<PeixBehaviour>().
     }
     private void OnDisable()
     {
         // todo Resetear posiciones
     }
 
-    void FixedUpdate()
-    {
-        m_bar.GetComponent<Rigidbody2D>().velocity = Vector3.left * Time.deltaTime * SO_Canya.PeixSpeed;
-    }
+    //void FixedUpdate()
+    //{
+    //    m_bar.GetComponent<Rigidbody2D>().velocity = Vector3.left * Time.deltaTime * SO_Canya.PeixSpeed;
+    //}
 
 }
