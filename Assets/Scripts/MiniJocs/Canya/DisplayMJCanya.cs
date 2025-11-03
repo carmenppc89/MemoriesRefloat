@@ -27,17 +27,15 @@ public class DisplayMJCanya : MonoBehaviour
         // ajustar el canvas a la camara
         m_canvas.renderMode = RenderMode.ScreenSpaceCamera;
         m_canvas.worldCamera = FindAnyObjectByType(typeof(Camera)) as Camera;
-
-        //m_peix.GetComponent<PeixBehaviour>().
     }
     private void OnDisable()
     {
         // todo Resetear posiciones
     }
 
-    //void FixedUpdate()
-    //{
-    //    m_bar.GetComponent<Rigidbody2D>().velocity = Vector3.left * Time.deltaTime * SO_Canya.PeixSpeed;
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log($"{this.name} -> {collision.gameObject.name}");
+    }
 
 }
