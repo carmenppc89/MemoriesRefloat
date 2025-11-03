@@ -4,33 +4,48 @@ using UnityEngine;
 
 public class PeixBehaviour : MonoBehaviour
 {
-    private float nextPos;
-    private float m_limiteL;
-    private float m_limiteR;
-    private float LimiteL
-    {
-        get { return m_limiteL; }
-        set { m_limiteL = value; }
-    }
-    private float LimiteR
-    {
-        get { return m_limiteR; }
-        set { m_limiteR = value; }
-    }
+    [SerializeField] private RectTransform m_limiteL;
+    private float m_limiteL_X;
+    [SerializeField] private RectTransform m_limiteR;
+    private float m_limiteR_X;
+
+    [SerializeField] private Vector3 m_offset;
+    [SerializeField] private Vector3 m_velocity = Vector3.zero;
+    [SerializeField] private float m_smoothTime = 0.3f;
+    [SerializeField] private Vector3 m_nextPos;
+
+    private RectTransform m_RectTrans;
 
     private void OnEnable()
     {
-        this.transform.localPosition = new Vector3(0, 0, 0);
+        m_RectTrans = GetComponent<RectTransform>();
+        transform.position = new Vector3(0, 0, 0);
+
+        float a = m_limiteL.anchoredPosition.x;
+        float b = m_limiteR.anchoredPosition.x;
+        float c = m_RectTrans.rect.width / 2;
+
+        m_limiteL_X = m_limiteL.anchoredPosition.x - (m_RectTrans.rect.width / 2);
+        m_limiteR_X = m_limiteR.anchoredPosition.x + (m_RectTrans.rect.width / 2);
+
+        m_nextPos = SetNextPos();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         // direccion velocidad
+        this.transform.position =
+            Vector3.SmoothDamp(transform.position,
+            m_nextPos + m_offset,
+            ref m_velocity, m_smoothTime);
+
+        if (transform.position == m_nextPos)
+            m_nextPos = SetNextPos();
     }
 
-    private float SetNextPos()
+    private Vector3 SetNextPos()
     {
-        return Random.Range(LimiteL, LimiteR);
+        return new Vector3(Random.Range(m_limiteL_X, m_limiteR_X), 0, 0);
     }
+
 }

@@ -536,6 +536,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5454fb5b74f8fba418a8989882983b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_limiteL: {fileID: 1904476336}
+  m_limiteR: {fileID: 795017204}
+  m_offset: {x: 0, y: 0, z: 0}
+  m_velocity: {x: 0, y: 0, z: 0}
+  m_smoothTime: 0.3
+  m_nextPos: {x: 0, y: 0, z: 0}
 --- !u!1 &536009617
 GameObject:
   m_ObjectHideFlags: 0
