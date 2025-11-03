@@ -1,0 +1,21 @@
+Licencia Educativa Personalizada v1.0
+
+Copyright © 2025 carmenppc89
+
+Se otorgan los siguientes permisos:
+
+- El código fuente, los assets y cualquier otro contenido de este proyecto pueden ser utilizados y estudiados con fines educativos.
+
+- No se permite su uso comercial bajo ninguna circunstancia.
+
+- No se autoriza la redistribución, modificación, ni publicación de versiones derivadas.
+
+- No se aceptan contribuciones externas ni modificaciones a este repositorio.
+
+- Todos los assets (modelos, texturas, sonidos, código y otros elementos) fueron creados por el autor y son de su propiedad exclusiva.
+
+- Cualquier uso fuera del ámbito educativo debe contar con el consentimiento escrito del autor.
+
+- Exención de responsabilidad
+  - EL PROYECTO SE PROPORCIONA “TAL CUAL”, SIN GARANTÍAS DE NINGÚN TIPO, expresas o implícitas, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un propósito particular y ausencia de infracción. 
+  - EN NINGÚN CASO EL AUTOR SERÁ RESPONSABLE DE NINGÚN DAÑO O PÉRDIDA DERIVADA DEL USO O IMPOSIBILIDAD DE USAR ESTE PROYECTO, AUN CUANDO SE HAYA ADVERTIDO DE LA POSIBILIDAD DE TALES DAÑOS.
