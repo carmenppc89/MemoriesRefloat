@@ -33,4 +33,5 @@ public class DisplayMJCanya : MonoBehaviour
         // todo Resetear posiciones
     }
 
+    // to-do corrutina de entrar y de salir
 }
