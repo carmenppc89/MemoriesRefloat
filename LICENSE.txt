@@ -1,21 +1,16 @@
-Licencia Educativa Personalizada v1.0
+Educational Custom License v1.0
 
-Copyright © 2025 carmenppc89
+Copyright © 2025 @carmenppc89
 
-Se otorgan los siguientes permisos:
+The following permissions are granted:
 
-- El código fuente, los assets y cualquier otro contenido de este proyecto pueden ser utilizados y estudiados con fines educativos.
+- The source code, assets, and any other content of this project may be used and studied for educational purposes.
+- Commercial use is strictly prohibited under any circumstances.
+- Redistribution, modification, or publication of derivative versions is not authorized.
+- External contributions or modifications to this repository are not accepted.
+- All assets (models, textures, sounds, code, and other elements) were created by the author and are their exclusive property.
+- Any use beyond educational purposes must have the author’s written consent.
 
-- No se permite su uso comercial bajo ninguna circunstancia.
-
-- No se autoriza la redistribución, modificación, ni publicación de versiones derivadas.
-
-- No se aceptan contribuciones externas ni modificaciones a este repositorio.
-
-- Todos los assets (modelos, texturas, sonidos, código y otros elementos) fueron creados por el autor y son de su propiedad exclusiva.
-
-- Cualquier uso fuera del ámbito educativo debe contar con el consentimiento escrito del autor.
-
-- Exención de responsabilidad
-  - EL PROYECTO SE PROPORCIONA “TAL CUAL”, SIN GARANTÍAS DE NINGÚN TIPO, expresas o implícitas, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un propósito particular y ausencia de infracción. 
-  - EN NINGÚN CASO EL AUTOR SERÁ RESPONSABLE DE NINGÚN DAÑO O PÉRDIDA DERIVADA DEL USO O IMPOSIBILIDAD DE USAR ESTE PROYECTO, AUN CUANDO SE HAYA ADVERTIDO DE LA POSIBILIDAD DE TALES DAÑOS.
+- Disclaimer
+  - THE PROJECT IS PROVIDED “AS IS”, WITHOUT ANY WARRANTY OF ANY KIND, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement.
+  - IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE PROJECT OR THE USE OR OTHER DEALINGS IN THE PROJECT.
