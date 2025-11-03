@@ -15,7 +15,7 @@ public class BarBehaviour : MonoBehaviour
         if (collision.gameObject.name == "Movement_Peix")
         {
             Debug.Log($"a");
-            prog();
+            //prog();
         }
     }
     
