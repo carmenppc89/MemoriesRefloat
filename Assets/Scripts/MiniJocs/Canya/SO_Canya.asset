@@ -15,6 +15,6 @@ MonoBehaviour:
   PlayerSpeed: 3
   PeixSpeed: 300
   FillAmountSpeed: 0.1
-  EmpyAmountSpeed: 0.06
+  EmpyAmountSpeed: 0.05
   MusiquitaDeAscensor: 8
   TempsDeReaccio: 2

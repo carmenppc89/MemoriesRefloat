@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class PeixBehaviour : MonoBehaviour
 {
+    [Header("Limites de la Barra")]
     [SerializeField] private RectTransform m_limiteL;
     private int m_limiteL_X;
     [SerializeField] private RectTransform m_limiteR;
     private int m_limiteR_X;
 
+    [Header("Comportamiento del Pez")]
     [SerializeField] private float m_offset = 0.005f;
     [SerializeField] private Vector3 m_velocity = Vector3.zero;
     [SerializeField] private float m_smoothTime = 0.3f;
