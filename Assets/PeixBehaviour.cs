@@ -48,4 +48,9 @@ public class PeixBehaviour : MonoBehaviour
         return new Vector3(UnityEngine.Random.Range(m_limiteL_X, m_limiteR_X), 0, 0);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log($"{this.name} -> {collision.gameObject.name}");
+    }
+
 }

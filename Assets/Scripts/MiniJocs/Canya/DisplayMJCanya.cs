@@ -33,9 +33,4 @@ public class DisplayMJCanya : MonoBehaviour
         // todo Resetear posiciones
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log($"{this.name} -> {collision.gameObject.name}");
-    }
-
 }

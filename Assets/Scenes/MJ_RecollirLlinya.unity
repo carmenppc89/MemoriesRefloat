@@ -460,7 +460,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421938187}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -522,7 +522,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
 --- !u!114 &421938193
 MonoBehaviour:
@@ -538,10 +538,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_limiteL: {fileID: 1904476336}
   m_limiteR: {fileID: 795017204}
-  m_offset: {x: 0, y: 0, z: 0}
+  m_offset: 0.005
   m_velocity: {x: 0, y: 0, z: 0}
-  m_smoothTime: 0.3
-  m_nextPos: {x: 0, y: 0, z: 0}
+  m_smoothTime: 0.5
+  m_nextPos: {x: 0, y: 0}
 --- !u!1 &536009617
 GameObject:
   m_ObjectHideFlags: 0
