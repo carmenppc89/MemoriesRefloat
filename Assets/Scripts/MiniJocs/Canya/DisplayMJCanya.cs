@@ -68,7 +68,7 @@ public class DisplayMJCanya : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
     }
-    private void SortirMinijoc(PeixScriptable peix)
+    private void SortirMinijoc(SO_Peix peix)
     {
         m_end = true;
         StopAllCoroutines();

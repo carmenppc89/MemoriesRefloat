@@ -4,8 +4,8 @@ using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 public enum comportament { estatic, movil, espantadis }
-[CreateAssetMenu(fileName = "PeixScriptable", menuName = "Scriptables/Peix")]
-public class SO_Peix : ScriptableObject
+[CreateAssetMenu(fileName = "SO_Peix", menuName = "Scriptables/Peix")]
+public class SO_Peix : SO_Item
 {
     [Header("Aparicio")]
     //public List<Estacions> estacions;
