@@ -13,8 +13,10 @@ public class DisplayMJCanya : MonoBehaviour
     [Header("Hijos")]
     [SerializeField] private GameObject m_progVar;
     private Image imgProgress;
+    [SerializeField] private RectTransform m_MJC;
 
     private Canvas m_canvas;
+    public Canvas Canvas { get { return m_canvas; } set { Canvas = value; } }
 
     private Coroutine m_PujarComptador;
     private Coroutine m_BaixarComptador;
@@ -27,17 +29,20 @@ public class DisplayMJCanya : MonoBehaviour
         m_canvas.renderMode = RenderMode.ScreenSpaceCamera;
         m_canvas.worldCamera = FindAnyObjectByType(typeof(Camera)) as Camera;
 
+        // detectar scene
+        Debug.Log(this.name);
+
+
+
+        // praprar imgProgress
         imgProgress = m_progVar.GetComponent<Image>();
         imgProgress.fillAmount = 0;
-
-        //m_bar.gameObject.GetComponent<BarBehaviour>().m_Display = this;
     }
     private void OnDisable()
     {
         // todo Resetear posiciones
     }
 
-    // to-do corrutina de entrar y de salir
     public void EnterTrigger()
     {
         m_PujarComptador = StartCoroutine(PujarComptador());
@@ -49,7 +54,8 @@ public class DisplayMJCanya : MonoBehaviour
         if (!m_end)
         {
             StopCoroutine(m_PujarComptador);
-            m_BaixarComptador = StartCoroutine(BaixarComptador());
+            if (gameObject.activeSelf)
+                m_BaixarComptador = StartCoroutine(BaixarComptador());
         }
     }
     IEnumerator PujarComptador()
@@ -92,5 +98,14 @@ public class DisplayMJCanya : MonoBehaviour
         //m_PlayerInputActions.MinijocCanya.Disable();
         //m_mySpot.GetionPecesCanya(peix);
         //m_MJCEnd.Raise();
+    }
+
+    public void SetAnchors(float anchor)
+    {
+        // 0.5 Ó 0.7
+        m_MJC.anchorMin = new Vector2(anchor, 0.5f);
+        m_MJC.anchorMax = new Vector2(anchor, 0.5f);
+
+        m_MJC.anchoredPosition = Vector2.zero;
     }
 }
