@@ -22,8 +22,6 @@ public class DisplayMJCanya : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log(this.name);
-
         // ajustar el canvas a la camara
         m_canvas = GetComponent<Canvas>();
         m_canvas.renderMode = RenderMode.ScreenSpaceCamera;
