@@ -130,6 +130,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 703753447086130694, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 703753447086130694, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 703753447086130694, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 703753447086130694, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1613303345205231616, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
       propertyPath: m_Name
       value: MJC_Canvas
@@ -138,6 +154,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 321815306}
+    - target: {fileID: 3888455462682181466, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3908681287329527625, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
       propertyPath: m_MJC
       value: 
@@ -172,6 +192,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7559837421425748447, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559837421425748447, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559837421425748447, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559837421425748447, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7559837421425748447, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
@@ -633,7 +665,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0

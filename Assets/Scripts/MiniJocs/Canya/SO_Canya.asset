@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerSpeed: 3
   PeixSpeed: 300
-  FillAmountSpeed: 0.1
-  EmpyAmountSpeed: 0.05
+  FillAmountSpeed: 0.07
+  EmpyAmountSpeed: 0.02
   MusiquitaDeAscensor: 8
   TempsDeReaccio: 2

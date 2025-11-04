@@ -15,25 +15,12 @@ public class DisplayMJCanya : MonoBehaviour
     private Image imgProgress;
     [SerializeField] private RectTransform m_MJC;
 
-    private Canvas m_canvas;
-    public Canvas Canvas { get { return m_canvas; } set { Canvas = value; } }
-
     private Coroutine m_PujarComptador;
     private Coroutine m_BaixarComptador;
     private bool m_end = false;
 
     private void OnEnable()
     {
-        // ajustar el canvas a la camara
-        m_canvas = GetComponent<Canvas>();
-        m_canvas.renderMode = RenderMode.ScreenSpaceCamera;
-        m_canvas.worldCamera = FindAnyObjectByType(typeof(Camera)) as Camera;
-
-        // detectar scene
-        Debug.Log(this.name);
-
-
-
         // praprar imgProgress
         imgProgress = m_progVar.GetComponent<Image>();
         imgProgress.fillAmount = 0;
