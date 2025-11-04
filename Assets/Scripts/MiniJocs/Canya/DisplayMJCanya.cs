@@ -11,14 +11,8 @@ public class DisplayMJCanya : MonoBehaviour
 
     // Todos sus hijos a mano
     [Header("Hijos")]
-    //[SerializeField] private RectTransform m_limite;
-    [SerializeField] private RectTransform m_bar;
-    //[SerializeField] private RectTransform m_peix;
-    //[SerializeField] private GameObject m_marc;
-    //[SerializeField] private GameObject m_progress;
     [SerializeField] private GameObject m_progVar;
     private Image imgProgress;
-    //[SerializeField] private GameObject m_progMarc;
 
     private Canvas m_canvas;
 
