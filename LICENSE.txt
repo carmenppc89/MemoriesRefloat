@@ -1,0 +1,18 @@
+Educational Custom License v1.0
+
+Copyright © 2025 @carmenppc89
+
+The following permissions are granted:
+
+- The source code, assets, and any other content of this project may be used and studied for educational purposes.
+- Commercial use is strictly prohibited under any circumstances.
+- Redistribution, modification, or publication of derivative versions is not authorized.
+- External contributions or modifications to this repository are not accepted.
+- All assets (models, textures, sounds, code, and other elements) were created by the author and are their exclusive property.
+- Any use beyond educational purposes must have the author’s written consent.
+
+- Disclaimer
+  - THE PROJECT IS PROVIDED “AS IS”, WITHOUT ANY WARRANTY OF ANY KIND, express or implied, including but not limited to the warranties of merchantability, 
+  fitness for a particular purpose, and noninfringement.
+  - IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, 
+  OUT OF, OR IN CONNECTION WITH THE PROJECT OR THE USE OR OTHER DEALINGS IN THE PROJECT.
