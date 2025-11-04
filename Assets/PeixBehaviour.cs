@@ -6,10 +6,10 @@ using UnityEngine;
 public class PeixBehaviour : MonoBehaviour
 {
     [Header("Limites de la Barra")]
-    [SerializeField] private RectTransform m_limiteL;
-    private int m_limiteL_X;
-    [SerializeField] private RectTransform m_limiteR;
-    private int m_limiteR_X;
+    [SerializeField] private RectTransform m_limiteDown;
+    private int m_limiteDown_Y;
+    [SerializeField] private RectTransform m_limiteUp;
+    private int m_limiteUp_Y;
 
     [Header("Comportamiento del Pez")]
     [SerializeField] private float m_offset = 0.005f;
@@ -28,8 +28,8 @@ public class PeixBehaviour : MonoBehaviour
     {
         m_RectTrans = GetComponent<RectTransform>();
 
-        m_limiteL_X = (int)(m_limiteL.anchoredPosition.x + ((m_RectTrans.rect.width / 2) + m_limiteL.rect.width / 2));
-        m_limiteR_X = (int)(m_limiteR.anchoredPosition.x - ((m_RectTrans.rect.width / 2) + m_limiteL.rect.width / 2));
+        m_limiteDown_Y = (int)(m_limiteDown.anchoredPosition.y + ((m_RectTrans.rect.height / 2) + m_limiteDown.rect.height / 2));
+        m_limiteUp_Y = (int)(m_limiteUp.anchoredPosition.y - ((m_RectTrans.rect.height / 2) + m_limiteDown.rect.height / 2));
 
         m_nextPos = SetNextPos();
     }
@@ -47,7 +47,7 @@ public class PeixBehaviour : MonoBehaviour
 
     private Vector3 SetNextPos()
     {
-        return new Vector3(UnityEngine.Random.Range(m_limiteL_X, m_limiteR_X), 0, 0);
+        return new Vector3(0, UnityEngine.Random.Range(m_limiteDown_Y, m_limiteUp_Y), 0);
     }
 
 }
