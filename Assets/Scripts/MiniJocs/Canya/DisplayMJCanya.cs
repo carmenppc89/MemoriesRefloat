@@ -11,23 +11,35 @@ public class DisplayMJCanya : MonoBehaviour
 
     // Todos sus hijos a mano
     [Header("Hijos")]
-    [SerializeField] private GameObject m_progVar;
-    private Image imgProgress;
     [SerializeField] private RectTransform m_MJC;
+    [SerializeField] private Image m_IMGProgress;
+    [SerializeField] private RectTransform m_Llinya;
+    [SerializeField] private RectTransform m_Peix;
 
     private Coroutine m_PujarComptador;
     private Coroutine m_BaixarComptador;
     private bool m_end = false;
 
+    private Canvas m_Canvas = null;
+
     private void OnEnable()
     {
-        // praprar imgProgress
-        imgProgress = m_progVar.GetComponent<Image>();
-        imgProgress.fillAmount = 0;
+        m_Canvas = m_Canvas ?? GetComponent<Canvas>();
+        if (m_Canvas.worldCamera == null)
+        {
+            m_Canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            m_Canvas.worldCamera = Camera.main;
+        }
+
+        // todo Resetear posiciones
+        m_IMGProgress.fillAmount = 0;
+        m_Peix.anchoredPosition = Vector3.zero;
+        m_Llinya.anchoredPosition = Vector3.zero;
     }
     private void OnDisable()
     {
-        // todo Resetear posiciones
+        m_Canvas = null;
+        StopAllCoroutines();
     }
 
     public void EnterTrigger()
@@ -49,9 +61,9 @@ public class DisplayMJCanya : MonoBehaviour
     {
         while (!m_end)
         {
-            imgProgress.fillAmount += SO_Canya.FillAmountSpeed;
+            m_IMGProgress.fillAmount += SO_Canya.FillAmountSpeed;
 
-            if (imgProgress.fillAmount >= 1)
+            if (m_IMGProgress.fillAmount >= 1)
             {
                 Debug.Log("Has pescado el pez!!");
                 SortirMinijoc(null);
@@ -63,8 +75,8 @@ public class DisplayMJCanya : MonoBehaviour
     {
         while (!m_end)
         {
-            imgProgress.fillAmount -= SO_Canya.EmpyAmountSpeed;
-            if (imgProgress.fillAmount <= 0)
+            m_IMGProgress.fillAmount -= SO_Canya.EmpyAmountSpeed;
+            if (m_IMGProgress.fillAmount <= 0)
             {
                 Debug.Log("Has perdido el pez :(");
                 SortirMinijoc(null);

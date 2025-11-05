@@ -25,6 +25,7 @@ public class SceneController : MonoBehaviour
 
                 m_MJC_Canvas = GameObject.Find("MJC_Canvas");
                 m_MJC_Canvas.GetComponent<DisplayMJCanya>().SetAnchors(m_anchors);
+                m_MJC_Canvas.SetActive(false);
 
                 break;
 
@@ -34,7 +35,7 @@ public class SceneController : MonoBehaviour
         }
         CamaraOnCanvas();
     }
-    public void SceneFinicher(Scene scene) { }
+    public void SceneFinisher(Scene scene) { }
 
     private void CamaraOnCanvas()
     {

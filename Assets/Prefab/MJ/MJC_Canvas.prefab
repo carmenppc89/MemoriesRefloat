@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 442291852011051992}
   - component: {fileID: 1539898079020787994}
   m_Layer: 5
-  m_Name: Progres_Var
+  m_Name: Progres_Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -397,8 +397,8 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 2
-  m_MatchWidthOrHeight: 0
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.6
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -417,8 +417,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SO_Canya: {fileID: 11400000, guid: 922bd92c6f77b464190a193299509770, type: 2}
-  m_progVar: {fileID: 640931207197117761}
-  m_MJC: {fileID: 0}
+  m_MJC: {fileID: 703753447086130694}
+  m_IMGProgress: {fileID: 1539898079020787994}
+  m_Llinya: {fileID: 723151810979657324}
+  m_Peix: {fileID: 7546395853525249361}
 --- !u!114 &6980230364455682598
 MonoBehaviour:
   m_ObjectHideFlags: 0

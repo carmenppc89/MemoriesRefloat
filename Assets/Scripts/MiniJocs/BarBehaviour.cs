@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// todo - Recibir Inputs
 public class BarBehaviour : MonoBehaviour
 {
     private DisplayMJCanya m_Display;
     private void OnEnable()
     {
-        //Debug.Log(this.name);
         m_Display = transform.parent.parent.GetComponent<DisplayMJCanya>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
