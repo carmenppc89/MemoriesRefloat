@@ -30,6 +30,7 @@ public class SceneController : MonoBehaviour
 
                 m_MJC_Canvas = GameObject.Find("CNV_MJC");
                 m_MJC_Canvas.GetComponent<DisplayMJCanya>().SetAnchors(m_anchors);
+                m_MJC_Canvas.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -20.0f);
                 m_MJC_Canvas.SetActive(false);
 
                 break;
