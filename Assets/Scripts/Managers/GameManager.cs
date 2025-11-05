@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log($"AWK -> {this.name}");
+
         if (m_Instance == null)
             m_Instance = this;
         else if (m_Instance != this)

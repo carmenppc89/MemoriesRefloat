@@ -14,6 +14,11 @@ public class SceneController : MonoBehaviour
     private GameObject m_MJC_Canvas;
     [SerializeField] private float m_anchors = 0.8f;
 
+    private void Awake()
+    {
+        Debug.Log($"AWK -> {this.name}");
+    }
+
     public void SceneStarter(Scene scene)
     {
 
@@ -23,7 +28,7 @@ public class SceneController : MonoBehaviour
 
                 m_Cam = Camera.main;
 
-                m_MJC_Canvas = GameObject.Find("MJC_Canvas");
+                m_MJC_Canvas = GameObject.Find("CNV_MJC");
                 m_MJC_Canvas.GetComponent<DisplayMJCanya>().SetAnchors(m_anchors);
                 m_MJC_Canvas.SetActive(false);
 
