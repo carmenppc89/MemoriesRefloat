@@ -21,6 +21,7 @@ public class DisplayUI_INVPrice : MonoBehaviour
 
     public void UpdateINVPrice(List<int> obj)
     {
+        // todo - ScriptableObj con inventario
         m_intPrice = 0;
         foreach (int p in obj)
         {
