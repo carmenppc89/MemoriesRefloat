@@ -584,7 +584,7 @@ GameObject:
   - component: {fileID: 1251641222}
   - component: {fileID: 1251641221}
   m_Layer: 5
-  m_Name: '! CNV_ShipStatus'
+  m_Name: '! CNV_Dinero'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 1628042306}
   - component: {fileID: 1628042305}
   m_Layer: 5
-  m_Name: '! CNV_Dinero'
+  m_Name: '! CNV_ShipStatus'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

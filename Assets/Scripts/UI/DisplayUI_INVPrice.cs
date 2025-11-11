@@ -11,6 +11,7 @@ public class DisplayUI_INVPrice : MonoBehaviour
     private void Awake()
     {
         m_TXTprice = GetComponent<TextMeshPro>();
+        m_TXTprice.text = 0 + "";
     }
 
     public void SetPrice(int price)
