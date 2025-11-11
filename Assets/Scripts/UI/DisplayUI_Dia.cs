@@ -1,23 +1,30 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum eHora { Noche, Tarde, Mañana }
+public enum eDiaSetmana { Mon, Tue, Wen, Thu, Fri, Sat, San }
+
 public class DisplayUI_Dia : MonoBehaviour
 {
-    [SerializeField] private Image m_IMGProgress;
+    [SerializeField] private TextMeshPro m_TXTDia;
+    [SerializeField] private Image m_IMGDia1;
+    [SerializeField] private Image m_IMGDia2;
 
-    private void SetIMGProgress(float amount)
+    public void SetDia(int dia)
     {
-        m_IMGProgress.fillAmount = amount;
+        m_TXTDia.text = Enum.GetValues(typeof(eDiaSetmana)).GetValue(dia).ToString();
+        SetTime(eHora.Mañana);
     }
 
-    private void AddIMGProgress(float amount)
+    public void SetTime(eHora hora)
     {
-        m_IMGProgress.fillAmount += amount;
-
-        if (m_IMGProgress.fillAmount == 0)
-            Debug.LogWarning("NOT IMPLEMENTED - end day"); // todo - EndDay
+        m_IMGDia2.gameObject.SetActive(hora == eHora.Mañana ? true : false);
+        m_IMGDia1.gameObject.SetActive(hora > 0 ? true : false);
     }
 
 }
