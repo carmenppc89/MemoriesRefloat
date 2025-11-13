@@ -85,15 +85,69 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
     public @PlayerInputSystem()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""version"": 0,
+    ""version"": 1,
     ""name"": ""PlayerInputSystem"",
-    ""maps"": [],
+    ""maps"": [
+        {
+            ""name"": ""PRT"",
+            ""id"": ""3373bd3b-9cea-4f37-aa27-ad7794be5be0"",
+            ""actions"": [
+                {
+                    ""name"": ""StartPortFishing"",
+                    ""type"": ""Button"",
+                    ""id"": ""7b32dc39-99c6-4642-95d0-d2eb92fa2582"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""TerminarDia"",
+                    ""type"": ""Button"",
+                    ""id"": ""5afa2eae-4a2f-4214-81a5-7fdf14c4a6c4"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""28efbf0a-7338-4acb-b508-5cda2d72f44b"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StartPortFishing"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""589cdef2-808d-4d2e-98f2-594c550bf655"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TerminarDia"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        }
+    ],
     ""controlSchemes"": []
 }");
+        // PRT
+        m_PRT = asset.FindActionMap("PRT", throwIfNotFound: true);
+        m_PRT_StartPortFishing = m_PRT.FindAction("StartPortFishing", throwIfNotFound: true);
+        m_PRT_TerminarDia = m_PRT.FindAction("TerminarDia", throwIfNotFound: true);
     }
 
     ~@PlayerInputSystem()
     {
+        UnityEngine.Debug.Assert(!m_PRT.enabled, "This will cause a leak and performance issues, PlayerInputSystem.PRT.Disable() has not been called.");
     }
 
     /// <summary>
@@ -164,5 +218,134 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
     public int FindBinding(InputBinding bindingMask, out InputAction action)
     {
         return asset.FindBinding(bindingMask, out action);
+    }
+
+    // PRT
+    private readonly InputActionMap m_PRT;
+    private List<IPRTActions> m_PRTActionsCallbackInterfaces = new List<IPRTActions>();
+    private readonly InputAction m_PRT_StartPortFishing;
+    private readonly InputAction m_PRT_TerminarDia;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "PRT".
+    /// </summary>
+    public struct PRTActions
+    {
+        private @PlayerInputSystem m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public PRTActions(@PlayerInputSystem wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "PRT/StartPortFishing".
+        /// </summary>
+        public InputAction @StartPortFishing => m_Wrapper.m_PRT_StartPortFishing;
+        /// <summary>
+        /// Provides access to the underlying input action "PRT/TerminarDia".
+        /// </summary>
+        public InputAction @TerminarDia => m_Wrapper.m_PRT_TerminarDia;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_PRT; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="PRTActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(PRTActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="PRTActions" />
+        public void AddCallbacks(IPRTActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PRTActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PRTActionsCallbackInterfaces.Add(instance);
+            @StartPortFishing.started += instance.OnStartPortFishing;
+            @StartPortFishing.performed += instance.OnStartPortFishing;
+            @StartPortFishing.canceled += instance.OnStartPortFishing;
+            @TerminarDia.started += instance.OnTerminarDia;
+            @TerminarDia.performed += instance.OnTerminarDia;
+            @TerminarDia.canceled += instance.OnTerminarDia;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="PRTActions" />
+        private void UnregisterCallbacks(IPRTActions instance)
+        {
+            @StartPortFishing.started -= instance.OnStartPortFishing;
+            @StartPortFishing.performed -= instance.OnStartPortFishing;
+            @StartPortFishing.canceled -= instance.OnStartPortFishing;
+            @TerminarDia.started -= instance.OnTerminarDia;
+            @TerminarDia.performed -= instance.OnTerminarDia;
+            @TerminarDia.canceled -= instance.OnTerminarDia;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="PRTActions.UnregisterCallbacks(IPRTActions)" />.
+        /// </summary>
+        /// <seealso cref="PRTActions.UnregisterCallbacks(IPRTActions)" />
+        public void RemoveCallbacks(IPRTActions instance)
+        {
+            if (m_Wrapper.m_PRTActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="PRTActions.AddCallbacks(IPRTActions)" />
+        /// <seealso cref="PRTActions.RemoveCallbacks(IPRTActions)" />
+        /// <seealso cref="PRTActions.UnregisterCallbacks(IPRTActions)" />
+        public void SetCallbacks(IPRTActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PRTActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PRTActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="PRTActions" /> instance referencing this action map.
+    /// </summary>
+    public PRTActions @PRT => new PRTActions(this);
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "PRT" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="PRTActions.AddCallbacks(IPRTActions)" />
+    /// <seealso cref="PRTActions.RemoveCallbacks(IPRTActions)" />
+    public interface IPRTActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "StartPortFishing" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnStartPortFishing(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "TerminarDia" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnTerminarDia(InputAction.CallbackContext context);
     }
 }
