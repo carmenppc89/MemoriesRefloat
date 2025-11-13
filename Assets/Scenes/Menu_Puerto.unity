@@ -1737,8 +1737,8 @@ RectTransform:
   - {fileID: 1478545944}
   - {fileID: 844163696}
   - {fileID: 4163525903973456683}
-  - {fileID: 973302279}
   - {fileID: 1251641220}
+  - {fileID: 973302279}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1759,9 +1759,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1644248031}
     m_Modifications:
+    - target: {fileID: 1081245991143041953, guid: f6cd71600ac796f4e807b92fd0228bf0, type: 3}
+      propertyPath: m_Name
+      value: VAR_Progress
+      objectReference: {fileID: 0}
     - target: {fileID: 3487015568208998002, guid: f6cd71600ac796f4e807b92fd0228bf0, type: 3}
       propertyPath: m_Name
       value: CNV_ShipStatus
+      objectReference: {fileID: 0}
+    - target: {fileID: 3814191872257241583, guid: f6cd71600ac796f4e807b92fd0228bf0, type: 3}
+      propertyPath: m_Name
+      value: TXT_Percentage
       objectReference: {fileID: 0}
     - target: {fileID: 6013653038318848316, guid: f6cd71600ac796f4e807b92fd0228bf0, type: 3}
       propertyPath: m_Pivot.x
@@ -1841,6 +1849,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013653038318848316, guid: f6cd71600ac796f4e807b92fd0228bf0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136535187242213335, guid: f6cd71600ac796f4e807b92fd0228bf0, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
