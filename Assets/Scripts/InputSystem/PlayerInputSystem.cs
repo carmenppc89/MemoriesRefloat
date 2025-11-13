@@ -93,7 +93,7 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
             ""id"": ""3373bd3b-9cea-4f37-aa27-ad7794be5be0"",
             ""actions"": [
                 {
-                    ""name"": ""StartPortFishing"",
+                    ""name"": ""StartMJPescaPuerto"",
                     ""type"": ""Button"",
                     ""id"": ""7b32dc39-99c6-4642-95d0-d2eb92fa2582"",
                     ""expectedControlType"": """",
@@ -109,6 +109,15 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MJPescaPuerto"",
+                    ""type"": ""Button"",
+                    ""id"": ""7ad3a37f-f766-4d94-bfb9-519381986706"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -119,7 +128,7 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""StartPortFishing"",
+                    ""action"": ""StartMJPescaPuerto"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -133,6 +142,17 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
                     ""action"": ""TerminarDia"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2e6f515f-ccae-4c99-83f2-9b4823ba6e57"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MJPescaPuerto"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -141,8 +161,9 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
 }");
         // PRT
         m_PRT = asset.FindActionMap("PRT", throwIfNotFound: true);
-        m_PRT_StartPortFishing = m_PRT.FindAction("StartPortFishing", throwIfNotFound: true);
+        m_PRT_StartMJPescaPuerto = m_PRT.FindAction("StartMJPescaPuerto", throwIfNotFound: true);
         m_PRT_TerminarDia = m_PRT.FindAction("TerminarDia", throwIfNotFound: true);
+        m_PRT_MJPescaPuerto = m_PRT.FindAction("MJPescaPuerto", throwIfNotFound: true);
     }
 
     ~@PlayerInputSystem()
@@ -223,8 +244,9 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
     // PRT
     private readonly InputActionMap m_PRT;
     private List<IPRTActions> m_PRTActionsCallbackInterfaces = new List<IPRTActions>();
-    private readonly InputAction m_PRT_StartPortFishing;
+    private readonly InputAction m_PRT_StartMJPescaPuerto;
     private readonly InputAction m_PRT_TerminarDia;
+    private readonly InputAction m_PRT_MJPescaPuerto;
     /// <summary>
     /// Provides access to input actions defined in input action map "PRT".
     /// </summary>
@@ -237,13 +259,17 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
         /// </summary>
         public PRTActions(@PlayerInputSystem wrapper) { m_Wrapper = wrapper; }
         /// <summary>
-        /// Provides access to the underlying input action "PRT/StartPortFishing".
+        /// Provides access to the underlying input action "PRT/StartMJPescaPuerto".
         /// </summary>
-        public InputAction @StartPortFishing => m_Wrapper.m_PRT_StartPortFishing;
+        public InputAction @StartMJPescaPuerto => m_Wrapper.m_PRT_StartMJPescaPuerto;
         /// <summary>
         /// Provides access to the underlying input action "PRT/TerminarDia".
         /// </summary>
         public InputAction @TerminarDia => m_Wrapper.m_PRT_TerminarDia;
+        /// <summary>
+        /// Provides access to the underlying input action "PRT/MJPescaPuerto".
+        /// </summary>
+        public InputAction @MJPescaPuerto => m_Wrapper.m_PRT_MJPescaPuerto;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -270,12 +296,15 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_PRTActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_PRTActionsCallbackInterfaces.Add(instance);
-            @StartPortFishing.started += instance.OnStartPortFishing;
-            @StartPortFishing.performed += instance.OnStartPortFishing;
-            @StartPortFishing.canceled += instance.OnStartPortFishing;
+            @StartMJPescaPuerto.started += instance.OnStartMJPescaPuerto;
+            @StartMJPescaPuerto.performed += instance.OnStartMJPescaPuerto;
+            @StartMJPescaPuerto.canceled += instance.OnStartMJPescaPuerto;
             @TerminarDia.started += instance.OnTerminarDia;
             @TerminarDia.performed += instance.OnTerminarDia;
             @TerminarDia.canceled += instance.OnTerminarDia;
+            @MJPescaPuerto.started += instance.OnMJPescaPuerto;
+            @MJPescaPuerto.performed += instance.OnMJPescaPuerto;
+            @MJPescaPuerto.canceled += instance.OnMJPescaPuerto;
         }
 
         /// <summary>
@@ -287,12 +316,15 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
         /// <seealso cref="PRTActions" />
         private void UnregisterCallbacks(IPRTActions instance)
         {
-            @StartPortFishing.started -= instance.OnStartPortFishing;
-            @StartPortFishing.performed -= instance.OnStartPortFishing;
-            @StartPortFishing.canceled -= instance.OnStartPortFishing;
+            @StartMJPescaPuerto.started -= instance.OnStartMJPescaPuerto;
+            @StartMJPescaPuerto.performed -= instance.OnStartMJPescaPuerto;
+            @StartMJPescaPuerto.canceled -= instance.OnStartMJPescaPuerto;
             @TerminarDia.started -= instance.OnTerminarDia;
             @TerminarDia.performed -= instance.OnTerminarDia;
             @TerminarDia.canceled -= instance.OnTerminarDia;
+            @MJPescaPuerto.started -= instance.OnMJPescaPuerto;
+            @MJPescaPuerto.performed -= instance.OnMJPescaPuerto;
+            @MJPescaPuerto.canceled -= instance.OnMJPescaPuerto;
         }
 
         /// <summary>
@@ -334,12 +366,12 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
     public interface IPRTActions
     {
         /// <summary>
-        /// Method invoked when associated input action "StartPortFishing" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "StartMJPescaPuerto" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnStartPortFishing(InputAction.CallbackContext context);
+        void OnStartMJPescaPuerto(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "TerminarDia" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
@@ -347,5 +379,12 @@ public partial class @PlayerInputSystem: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnTerminarDia(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "MJPescaPuerto" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMJPescaPuerto(InputAction.CallbackContext context);
     }
 }

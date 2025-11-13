@@ -1,5 +1,6 @@
 using UnityEngine;
 
+public enum eScene { PRT, BRC, BUCO };
 public abstract class PlayerState
 {
     public abstract void EnterState(PlayerController pc);

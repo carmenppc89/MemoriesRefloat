@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     // +    State   +
+    public eScene ActionMap;
     private PlayerState m_currentPlayerState;
     private PS_PRT_Idle m_PuertoIdle;
     private PS_PRT_Waiting m_PuertoWaiting;
@@ -15,20 +17,14 @@ public class PlayerController : MonoBehaviour
     // -    State   -
 
     //  +   InputSystem   +
-    PlayerInputSystem m_PlayerInputActions;
-    public PlayerInputSystem Actions => m_PlayerInputActions;
+    public PlayerInputSystem PlayerInputActions;
+    public PlayerInputSystem Actions => PlayerInputActions;
     //  -   InputSystem   -
 
     void Start()
     {
-        m_PlayerInputActions = new PlayerInputSystem();
-        //m_PlayerInputActions.Port.Enable();
-        //m_PlayerInputActions.Port.Moviment.performed += Moviment;
-        //m_PlayerInputActions.Port.Moviment.canceled += Stop;
-        //m_PlayerInputActions.Port.Pesca.performed += Pescar;
-        //m_PlayerInputActions.Port.Inventari.performed += Inventari;
-        //m_PlayerInputActions.Port.Interactuar.performed += Interactuar;
-        //m_PlayerInputActions.Port.Exit.canceled -= Exit;
+        PlayerInputActions = new PlayerInputSystem();
+        PlayerInputActions.PRT.Enable();
     }
 
     // Update is called once per frame
@@ -36,5 +32,32 @@ public class PlayerController : MonoBehaviour
     {
         if (m_currentPlayerState != null)
             m_currentPlayerState.UpdateState(this);
+    }
+    public void SwitchState(PlayerState newState)
+    {
+        if (CanSwitch(newState))
+        {
+            m_currentPlayerState.ExitState(this);
+            newState.EnterState(this);
+            m_currentPlayerState = newState;
+        }
+    }
+    private bool CanSwitch(PlayerState newState)
+    {
+        // todo - canswitch
+        return true;
+    }
+
+    public void TerminarDia(InputAction.CallbackContext context)
+    {
+        SwitchState(m_PuertoSleeping);
+    }
+    public void StartMJPescaPuerto(InputAction.CallbackContext context)
+    {
+        SwitchState(m_PuertoFishing);
+    }
+    public void MJPescaPuerto(InputAction.CallbackContext context)
+    {
+        throw new System.NotImplementedException();
     }
 }

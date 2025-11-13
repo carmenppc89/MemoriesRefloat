@@ -7,7 +7,7 @@
             "id": "3373bd3b-9cea-4f37-aa27-ad7794be5be0",
             "actions": [
                 {
-                    "name": "StartPortFishing",
+                    "name": "StartMJPescaPuerto",
                     "type": "Button",
                     "id": "7b32dc39-99c6-4642-95d0-d2eb92fa2582",
                     "expectedControlType": "",
@@ -23,6 +23,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "MJPescaPuerto",
+                    "type": "Button",
+                    "id": "7ad3a37f-f766-4d94-bfb9-519381986706",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -33,7 +42,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "StartPortFishing",
+                    "action": "StartMJPescaPuerto",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -45,6 +54,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "TerminarDia",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e6f515f-ccae-4c99-83f2-9b4823ba6e57",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MJPescaPuerto",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

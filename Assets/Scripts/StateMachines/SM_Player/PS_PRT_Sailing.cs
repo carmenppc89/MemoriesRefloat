@@ -6,7 +6,7 @@ public class PS_PRT_Sailing : PlayerState
 {
     public override void EnterState(PlayerController pc)
     {
-        throw new System.NotImplementedException();
+        pc.PlayerInputActions.PRT.Disable();
     }
 
     public override void ExitState(PlayerController pc)
