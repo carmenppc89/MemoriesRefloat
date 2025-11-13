@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerIdle : PlayerState
+public class PS_PRT_Sleeping : PlayerState
 {
     public override void EnterState()
     {

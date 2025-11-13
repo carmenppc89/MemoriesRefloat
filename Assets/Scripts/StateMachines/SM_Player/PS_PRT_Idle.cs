@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMJCanya : PlayerState
+public class PS_PRT_Idle : PlayerState
 {
     public override void EnterState()
     {
