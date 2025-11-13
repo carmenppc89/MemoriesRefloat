@@ -7,6 +7,7 @@ public class PS_PRT_Idle : PlayerState
     public override void EnterState(PlayerController pc)
     {
         throw new System.NotImplementedException();
+        // to-do comprobar dia
     }
 
     public override void ExitState(PlayerController pc)
