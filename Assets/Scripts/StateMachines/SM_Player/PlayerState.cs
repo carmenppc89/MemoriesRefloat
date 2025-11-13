@@ -2,9 +2,9 @@ using UnityEngine;
 
 public abstract class PlayerState
 {
-    public abstract void EnterState();
+    public abstract void EnterState(PlayerController pc);
 
-    public abstract void UpdateState();
+    public abstract void UpdateState(PlayerController pc);
 
-    public abstract void ExitState();
+    public abstract void ExitState(PlayerController pc);
 }
