@@ -1,0 +1,1107 @@
+fileFormatVersion: 2
+guid: 5db2208e636b37f41807871c8c462e4d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2.5
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingFront0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2758
+        width: 174
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe03f3613500a447854cbb2bf8ca05c
+      internalID: 1976316413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_Idle0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3216
+        width: 174
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30510650f1ee452459d56b6989eb494d
+      internalID: -1561398159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingFront1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 2758
+        width: 175
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68981f004f3ec6449aa64556069e3746
+      internalID: 101341823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_Idle1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 3216
+        width: 175
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88f7e56b8cbfe14087046179762bd48
+      internalID: -100799658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingFront2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 2758
+        width: 166
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a266599cbb00df4dbd4603205034339
+      internalID: -21302635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_Idle2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 3216
+        width: 175
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a155da92ac2d8ad4b8e9bc4facf15a74
+      internalID: 1062706397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingFront3
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 2758
+        width: 173
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55573dd9c87beb1478a7ba038818a6fa
+      internalID: 1259392558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_Stretching0
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 3216
+        width: 205
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ee0f801566d0e419127e9623fcaf4d
+      internalID: -1997170541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingFront4
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 2758
+        width: 175
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9822cb48a7c79bd4886266ebbe7a1da2
+      internalID: -1441402332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_Stretching1
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 3216
+        width: 173
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8aefa264a1b6864ea9387695891ce0e
+      internalID: 424949061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingFront5
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 2758
+        width: 164
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7349046d27a93e8479b49c851006c259
+      internalID: 616840011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingFront6
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 2758
+        width: 175
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673bc9abcaeddf748920e541b1889cb4
+      internalID: 1935699985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_Stretching3
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 3213
+        width: 170
+        height: 417
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05114f880808d01498066772c63305bb
+      internalID: -1951844375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingSide0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1840
+        width: 134
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfb06110e1f3904a816ae2c5a62cf3c
+      internalID: 1006977561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingBack0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2289
+        width: 174
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ac8feac85224d47b6c4af8001c35f5
+      internalID: -1384514897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingSide1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1840
+        width: 154
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b799ac554cbe046b9bff93a9846180
+      internalID: 1093609115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingBack1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 2289
+        width: 164
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c39e7f7f3be844ea889687786072ab
+      internalID: 1365869798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingSide2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1840
+        width: 224
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d5ffab9cc24a54d8712cb075291bfd
+      internalID: -468856854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingBack2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 2288
+        width: 155
+        height: 415
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f9b0505ab0e9942a109b3072783d03
+      internalID: 966287307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingBack3
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2289
+        width: 164
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294c5e9e59da11c4b97b3d6edf4095fc
+      internalID: 278512693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingSide3
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1840
+        width: 134
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef51d225acf9ed49a85f0715db4406d
+      internalID: 1721868944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingBack4
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 2291
+        width: 175
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7469a19e2734d4a8612d22c3fc6daf
+      internalID: 1559350007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingSide4
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1840
+        width: 154
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7371b2f24c4f4154aa6493c911ac37da
+      internalID: -409094204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingBack5
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 2293
+        width: 164
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326197dfc617bf548af46ae856d5d44d
+      internalID: -1858577474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingSide5
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1840
+        width: 223
+        height: 414
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f23904ab1270d4db9c5d0a3fa2df01
+      internalID: -81956112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingBack6
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 2292
+        width: 173
+        height: 425
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc142336b3f94b34e9d06ced72544315
+      internalID: 57308053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_WalkingSide6
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1840
+        width: 135
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37608dcfeaeb9ce4a924e15ebb390b1b
+      internalID: 256514440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingFront0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 200
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd236847346ab949ac810b8e5ed21ee
+      internalID: -1087819086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingFront1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1250
+        width: 235
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf496de9a3cb0d44b91191e8e70e12b5
+      internalID: -845421217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingFront2
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1245
+        width: 233
+        height: 574
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451b1319d0d7bd94cbff0d8777e0373a
+      internalID: -1204668926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingFront3
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1245
+        width: 203
+        height: 565
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939da5368a0edbc48a4e55760700725a
+      internalID: -693113155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingFront4
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1245
+        width: 243
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec3e7eb89e107d4e841d7dcd3a0fd06
+      internalID: 2128695936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingFront5
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1245
+        width: 221
+        height: 574
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f0172027465374d8d326cb3897e8b6
+      internalID: -1544420178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingBack0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 653
+        width: 184
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec3b6b4950affc498db09d20b16048b
+      internalID: 604768033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingBack1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 651
+        width: 223
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03cd0e2b22c15a44adf94afe88d17fe
+      internalID: -599742989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingBack2
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 653
+        width: 233
+        height: 572
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb540f5fb35e4a4abfa26a59f7de107
+      internalID: -1461134529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingBack3
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 653
+        width: 205
+        height: 562
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dfc2b8e7350e642ac2580da7501692
+      internalID: -229196317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingBack4
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 653
+        width: 243
+        height: 583
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf42b3d973cbdc4f9a8c0a6e18099e6
+      internalID: 1222977213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingBack5
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 653
+        width: 222
+        height: 574
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbddc4a806ebdf43b668a6c74af851f
+      internalID: -1366095143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingSide0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 13
+        width: 155
+        height: 425
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2d41d4b33f0c147a3829438c58ab98
+      internalID: -1270797884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingSide1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 11
+        width: 153
+        height: 483
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf254d2d37ef9e148a0f6554330a0769
+      internalID: 166962796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingSide2
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 12
+        width: 175
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabcaf3d556f2ec49a4193fab57bee2a
+      internalID: 1648576919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingSide3
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 13
+        width: 275
+        height: 594
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404b0c8d8741b4944baa5409915de696
+      internalID: 573524817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingSide4
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 24
+        width: 303
+        height: 554
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30be69262db4e1a418e9468e602a4d03
+      internalID: 1778731318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritePlayer_FishingSide5
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 22
+        width: 314
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cbaf155f27d17419fafdedcaab065c
+      internalID: 1500836631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PlayeSprites2_38: -441298614
+      PlayeSprites2_40: -664755356
+      PlayeSprites2_41: -1803238045
+      SpritePlayer_FishingBack0: 604768033
+      SpritePlayer_FishingBack1: -599742989
+      SpritePlayer_FishingBack2: -1461134529
+      SpritePlayer_FishingBack3: -229196317
+      SpritePlayer_FishingBack4: 1222977213
+      SpritePlayer_FishingBack5: -1366095143
+      SpritePlayer_FishingFront0: -1087819086
+      SpritePlayer_FishingFront1: -845421217
+      SpritePlayer_FishingFront2: -1204668926
+      SpritePlayer_FishingFront3: -693113155
+      SpritePlayer_FishingFront4: 2128695936
+      SpritePlayer_FishingFront5: -1544420178
+      SpritePlayer_FishingSide0: -1270797884
+      SpritePlayer_FishingSide1: 166962796
+      SpritePlayer_FishingSide2: 1648576919
+      SpritePlayer_FishingSide3: 573524817
+      SpritePlayer_FishingSide4: 1778731318
+      SpritePlayer_FishingSide5: 1500836631
+      SpritePlayer_Idle0: -1561398159
+      SpritePlayer_Idle1: -100799658
+      SpritePlayer_Idle2: 1062706397
+      SpritePlayer_Stretching0: -1997170541
+      SpritePlayer_Stretching1: 424949061
+      SpritePlayer_Stretching3: -1951844375
+      SpritePlayer_WalkingBack0: -1384514897
+      SpritePlayer_WalkingBack1: 1365869798
+      SpritePlayer_WalkingBack2: 966287307
+      SpritePlayer_WalkingBack3: 278512693
+      SpritePlayer_WalkingBack4: 1559350007
+      SpritePlayer_WalkingBack5: -1858577474
+      SpritePlayer_WalkingBack6: 57308053
+      SpritePlayer_WalkingFront0: 1976316413
+      SpritePlayer_WalkingFront1: 101341823
+      SpritePlayer_WalkingFront2: -21302635
+      SpritePlayer_WalkingFront3: 1259392558
+      SpritePlayer_WalkingFront4: -1441402332
+      SpritePlayer_WalkingFront5: 616840011
+      SpritePlayer_WalkingFront6: 1935699985
+      SpritePlayer_WalkingSide0: 1006977561
+      SpritePlayer_WalkingSide1: 1093609115
+      SpritePlayer_WalkingSide2: -468856854
+      SpritePlayer_WalkingSide3: 1721868944
+      SpritePlayer_WalkingSide4: -409094204
+      SpritePlayer_WalkingSide5: -81956112
+      SpritePlayer_WalkingSide6: 256514440
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
