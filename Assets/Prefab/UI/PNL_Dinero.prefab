@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5816139468019189521}
   - component: {fileID: 8177776379176982174}
   m_Layer: 5
-  m_Name: CNV_Marc
+  m_Name: IMG_Marc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 7214931349570126105}
   - component: {fileID: 7257274299591347970}
   m_Layer: 5
-  m_Name: CNV_Dinero
+  m_Name: PNL_Dinero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 8736001035711383285}
   - component: {fileID: 5845377792199937296}
   m_Layer: 5
-  m_Name: TXT_Dinero
+  m_Name: VAR_Dinero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +183,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5629613736500413252}
+  - {fileID: 2423360090177571504}
   m_Father: {fileID: 4993340448768258522}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!1001 &2444139856103654239
+--- !u!1001 &5650525270446049963
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -347,18 +347,6 @@ PrefabInstance:
     - target: {fileID: 8055589404953706523, guid: e375a851d70af5f4da243d1bb57deae5, type: 3}
       propertyPath: m_SizeDelta.y
       value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8055589404953706523, guid: e375a851d70af5f4da243d1bb57deae5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8055589404953706523, guid: e375a851d70af5f4da243d1bb57deae5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8055589404953706523, guid: e375a851d70af5f4da243d1bb57deae5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8055589404953706523, guid: e375a851d70af5f4da243d1bb57deae5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -417,8 +405,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e375a851d70af5f4da243d1bb57deae5, type: 3}
---- !u!224 &5629613736500413252 stripped
+--- !u!224 &2423360090177571504 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8055589404953706523, guid: e375a851d70af5f4da243d1bb57deae5, type: 3}
-  m_PrefabInstance: {fileID: 2444139856103654239}
+  m_PrefabInstance: {fileID: 5650525270446049963}
   m_PrefabAsset: {fileID: 0}

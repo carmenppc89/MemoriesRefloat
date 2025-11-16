@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7900938247795765046}
   - component: {fileID: 2885784894847339625}
   m_Layer: 5
-  m_Name: TXT_Dia
+  m_Name: VAR_Dia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 94505987843667186}
   - component: {fileID: 54719429931476067}
   m_Layer: 5
-  m_Name: CNV_Dia
+  m_Name: PNL_Dia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563909029058611455}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 6182292466161954858}
   - component: {fileID: 7166854095902778723}
   m_Layer: 5
-  m_Name: Dia (1)
+  m_Name: VAR_Dia (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 3811641463997625322}
   - component: {fileID: 6431177714893627664}
   m_Layer: 5
-  m_Name: Dia (2)
+  m_Name: VAR_Dia (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 4395524464967164077}
   - component: {fileID: 5022906133430298533}
   m_Layer: 5
-  m_Name: CNV_Marc
+  m_Name: IMG_Marc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

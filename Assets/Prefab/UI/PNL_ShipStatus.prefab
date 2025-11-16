@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 3257511810248078340}
   - component: {fileID: 4445306486062845046}
   m_Layer: 5
-  m_Name: CNV_Marc
+  m_Name: IMG_Marc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 1006037589303963433}
   - component: {fileID: 29915851993979159}
   m_Layer: 5
-  m_Name: CNV_ShipStatus
+  m_Name: PNL_ShipStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
