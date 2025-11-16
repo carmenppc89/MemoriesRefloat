@@ -520,6 +520,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 793766462}
+    - target: {fileID: 6576172488928971217, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7559837421425748447, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -600,6 +604,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8516543973559067427, guid: e1e277555b49a734f8886d1c109d6ee8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -610,6 +618,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 793766463}
-  - {fileID: 2096255570}
   - {fileID: 5101870556490943413}
   - {fileID: 1193546567}
+  - {fileID: 2096255570}
