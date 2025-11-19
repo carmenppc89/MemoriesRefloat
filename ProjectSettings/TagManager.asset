@@ -41,15 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Grid
-    uniqueID: 281010983
-    locked: 0
   - name: BK
     uniqueID: 3645215083
     locked: 0
-  - name: UI
-    uniqueID: 2908165525
+  - name: Grid
+    uniqueID: 281010983
     locked: 0
   - name: Player
     uniqueID: 4064662693
+    locked: 0
+  - name: UI_state
+    uniqueID: 2908165525
+    locked: 0
+  - name: UI_MJ
+    uniqueID: 2822236657
     locked: 0
